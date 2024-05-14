@@ -11,11 +11,11 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    template: '%s - paydece',
+    default: 'paydece - Decentralized P2P',
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    'Paydece is a decentralized P2P platform that enables users to buy and sell cryptocurrencies with Fiat without intermediaries, offering privacy, and security, and always preserving decentralization.',
 }
 
 export default function RootLayout({ children }) {

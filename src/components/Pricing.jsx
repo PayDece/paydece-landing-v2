@@ -10,59 +10,56 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'FREE',
     featured: false,
     price: { Monthly: '$0', Annually: '$0' },
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Ideal for testing or for occasional trading.',
     button: {
       label: 'Get started for free',
-      href: '/register',
+      href: 'https://app.paydece.io',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      '1% side commission fee per transaction',
+      'The premiums has better position in the marketplace',
+      'Doesn´t access to premium community',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
+    name: 'BASIC',
     featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    price: { Monthly: '$50', Annually: '$70' },
     description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
+      'The basic subscription plan is perfect for new users.',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      href: 'https://app.paydece.io/subscriptions',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
+      'Time savings in cost management.',
+      'Without discount.',
+      'Best position in the marketplace',
+      '30 days free of commissions.',
     ],
     logomarkClassName: 'fill-gray-500',
   },
   {
-    name: 'VIP',
+    name: 'PRO',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    price: { Monthly: '$480', Annually: '$1,990' },
     description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+      'Our Pro subscription plan is tailor-made for those users dedicated to regular cryptocurrency trading. Forget about commissions for the whole year and take advantage of a 20% discount on the total.',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      href: 'https://app.paydece.io/subscriptions',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      'Time savings in cost management.',
+      '20% OFF discount.',
+      'Ideal for active daily users.',
+      'Best position in the marketplace',
+      '365 days without commissions.',
     ],
     logomarkClassName: 'fill-cyan-500',
   },
@@ -112,7 +109,6 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900',
         )}
       >
-        <Logomark className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
         <span className="ml-4">{name}</span>
       </h3>
       <p
@@ -206,58 +202,11 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Flat pricing, no management fees.
+            Premium Subscription
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+            With the monthly subscription, you can make transactions without fees on our platform, perfect for Merchants who regularly act as Market Makers in our P2P.
           </p>
-        </div>
-
-        <div className="mt-8 flex justify-center">
-          <div className="relative">
-            <RadioGroup
-              value={activePeriod}
-              onChange={setActivePeriod}
-              className="grid grid-cols-2"
-            >
-              {['Monthly', 'Annually'].map((period) => (
-                <RadioGroup.Option
-                  key={period}
-                  value={period}
-                  className={clsx(
-                    'cursor-pointer border border-gray-300 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing.2)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
-                    period === 'Monthly'
-                      ? 'rounded-l-lg'
-                      : '-ml-px rounded-r-lg',
-                  )}
-                >
-                  {period}
-                </RadioGroup.Option>
-              ))}
-            </RadioGroup>
-            <div
-              aria-hidden="true"
-              className={clsx(
-                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
-                activePeriod === 'Monthly'
-                  ? '[clip-path:inset(0_50%_0_0)]'
-                  : '[clip-path:inset(0_0_0_calc(50%-1px))]',
-              )}
-            >
-              {['Monthly', 'Annually'].map((period) => (
-                <div
-                  key={period}
-                  className={clsx(
-                    'py-2 text-center text-sm font-semibold text-white',
-                    period === 'Annually' && '-ml-px',
-                  )}
-                >
-                  {period}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">

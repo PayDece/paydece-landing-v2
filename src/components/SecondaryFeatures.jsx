@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: '100% Decentralized',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Your funds are always under your control.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: '100% Safe',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
-    icon: DeviceCardsIcon,
+      'Smart contract audited by Hacken.io',
+    icon: DeviceLockIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'A total Web3 P2P',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'Operate 365 days a year, 24hs a day.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: '+10 Stablecoins',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Invite new insiders to get tips faster and beat even other paydece users.',
     icon: DeviceListIcon,
   },
   {
     name: 'Encrypted and anonymized',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Your privacy is our priority. We will never ask for personal information no matter what.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'Widget B2B',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'Connect our Widget in your Dex, Wallet or Web3 protocol as a Fiat on/off Ramp',
     icon: DeviceChartIcon,
   },
 ]
@@ -196,11 +196,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+          The next generation of P2P
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+          The power of blockchain technology applied to achieve a 100% decentralized P2P marketplace.
           </p>
         </div>
         <ul

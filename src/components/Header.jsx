@@ -6,7 +6,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
+import Logo from "../images/logos/Logo-Negro.png"
+import Image from 'next/image'
 import { NavLinks } from '@/components/NavLinks'
 
 function MenuIcon(props) {
@@ -52,7 +53,7 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+            <Image width={200} src={Logo} alt="logo"/>
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -101,19 +102,16 @@ export function Header() {
                             <MobileNavLink href="/#features">
                               Features
                             </MobileNavLink>
-                            <MobileNavLink href="/#reviews">
-                              Reviews
-                            </MobileNavLink>
                             <MobileNavLink href="/#pricing">
-                              Pricing
+                              Premium
                             </MobileNavLink>
                             <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             <Button href="/login" variant="outline">
-                              Log in
+                              Widget
                             </Button>
-                            <Button href="#">Download the app</Button>
+                            <Button href="#">Go to App</Button>
                           </div>
                         </Popover.Panel>
                       </>
@@ -122,11 +120,11 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" variant="outline" className="hidden lg:block">
-              Log in
+            <Button href="widget" target="_blank" variant="outline" className="hidden lg:block">
+              Widget P2P
             </Button>
-            <Button href="#" className="hidden lg:block">
-              Download
+            <Button href="https://app.paydece.io/" target="_blank" className="hidden lg:block">
+              Go to App
             </Button>
           </div>
         </Container>

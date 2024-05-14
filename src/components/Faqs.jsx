@@ -3,55 +3,41 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'How can I connect my wallet?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'If you are on PC, go to the button “Connect Wallet” select your wallet and sign de connection that pops up. If you are on mobile, enter to your wallet’s app navigator and go to app.paydece.io. There, select “connect wallet” and sign the connection when the window pops up.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'Where can a I check if someone took my order?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
-    },
-    {
-      question: 'But isn’t insider trading illegal?',
-      answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
+        'After connecting your wallet, go to the left panel and select the “transactions” tab. This will open the option to see the “active transactions”. Remember that you can also configure a telegram bot to receive notifications when an order is taken. To configure this bot, click on the settings button in the up-right corner (after wallet connection) and select the “profile” option. There, add your telegram username and, finally, go to the “settings” option visible on that same page and turn the notifications on.',
     },
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
+      question: 'Why can not I create an ad?',
       answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
+        'The most common problem when failing to create an add is because of insufficient gas. paydece operates with a smart contract, so you need a gas token to operate it on the network selected, the amount needed may vary, usually being between 0,1 to 5 USDT equivalent to the gas token from that network.',
     },
     {
-      question: 'Where is Pocket based?',
+      question: 'Why does an "insufficient funds" message appears when putting crypto in escrow?',
       answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'This means that you don’t have enough crypto to block in the smart contract and pay paydece’s commission. When beginning a transaction, your funds must be equal or higher than the amount you are selling + paydece’s commission (1%) + a 0.6% extra.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'What do I do if the seller does not release crypto?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'If this happens, 45 minutes after cryptos were blocked, a “start a claim” button will become available to contact a paydece staff member. Our staff will gather all the necessary information, and if everything is okay, cryptos will be released from the contract by paydece.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'Which is the time limit for an order to be completed?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
-    },
-    {
-      question: 'How do I become an insider?',
-      answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'On paydece, orders have no time limit, buyer and seller decides when to complete or cancel the operation.',
     },
   ],
+  
 ]
 
 export function Faqs() {
@@ -67,13 +53,14 @@ export function Faqs() {
             id="faqs-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Frequently asked questions
+            FAQs
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            If you have anything else you want to ask,{' '}
+            If you have anything else you want to ask, {''}
             <a
-              href="mailto:info@example.com"
+              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=benancio@paydece.io"
               className="text-gray-900 underline"
+              target="_blank"
             >
               reach out to us
             </a>
