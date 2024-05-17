@@ -122,7 +122,7 @@ export function Hero() {
         </div>
       </Container>
       <Container>
-      <div className="mt-[100px]">
+      {/* <div className="mt-[100px]">
             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
               Trusted for
             </p>
@@ -145,7 +145,7 @@ export function Hero() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
       </Container>
     </div>
   )
