@@ -7,6 +7,8 @@ import { PaydeceWidget } from 'paydece-widget';
 import { useEffect } from 'react';
 import { Container } from '@/components/Container'
 import { Button } from '@/components/Button'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
 
 export default function Widget() {
 
@@ -18,11 +20,10 @@ export default function Widget() {
   });}, [])
 
   return (
-    <Container>
+    <>
+      <Header/>
+      <Container>
       <div className="">
-        <Link href="/" aria-label="Home">
-          <Image src={Logo} width={200}/>
-        </Link>
         <div className="relative mt-12 sm:mt-16">
           <div className="flex justify-between">
             <h1 className="text-2xl font-medium tracking-tight text-gray-900">
@@ -37,6 +38,8 @@ export default function Widget() {
           <div className="mt-12 items-center justify-center" id="widget-container"></div>
         </div>
       </div>
-    </Container>
+      </Container>
+      <Footer/>
+    </>
   )
 }
