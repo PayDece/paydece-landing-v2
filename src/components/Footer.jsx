@@ -7,6 +7,8 @@ import { TextField } from '@/components/Fields'
 import { Logomark } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import IsoLogo from '@/images/logos/Iso-Color.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faTelegramPlane, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons'
 
 function QrCodeBorder(props) {
   return (
@@ -39,16 +41,41 @@ export function Footer() {
           </div>
           <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:bg-gray-100 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
             <div className="ml-8 lg:w-64">
-              <p className="text-base font-semibold text-gray-900">
-                <Link href="#">
-                  <span className="absolute inset-0 sm:rounded-2xl" />
-                  Decentralized P2P
-                </Link>
-              </p>
-              <p className="mt-1 text-sm text-gray-700">
-                The next generation of P2P.
-              </p>
             </div>
+          <div className="mt-6 space-x-6 md:mt-0">
+            <a
+              href="https://discord.gg/9RT2CzeGxp"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <FontAwesomeIcon icon={faDiscord} />
+            </a>
+            <a
+              href="https://twitter.com/paydece"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a
+              href="https://t.me/paydece"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <FontAwesomeIcon icon={faTelegramPlane} />
+            </a>
+            <a
+              href="https://www.youtube.com/@paydece"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+          </div>
           </div>
         </div>
         <div className="flex flex-col items-center border-t border-gray-200 pb-12 pt-8 md:flex-row-reverse md:justify-between md:pt-6">
@@ -73,3 +100,6 @@ export function Footer() {
     </footer>
   )
 }
+
+
+
