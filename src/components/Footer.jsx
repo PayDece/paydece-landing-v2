@@ -29,7 +29,7 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-y-12 pb-6 pt-16 lg:flex-row lg:items-center lg:py-16">
           <div>
             <div className="flex items-center text-gray-900">
-              <Image className="w-[60px]" src={IsoLogo}></Image>
+              <Image className="w-[60px]" alt="logo" src={IsoLogo}></Image>
               <div className="ml-4">
                 <p className="text-base font-semibold">paydece</p>
                 <p className="mt-1 text-sm">Decentralized P2P.</p>

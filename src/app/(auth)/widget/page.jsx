@@ -31,6 +31,9 @@ export default function Widget() {
               <h1 className="text-2xl font-medium tracking-tight text-gray-900">
                 Connect our Widget P2P as fiat on/off ramp in your Wallet or Dex.
               </h1>
+              <Button href="https://www.npmjs.com/package/paydece-widget" target="_blank">
+                Documentation
+              </Button>
             </div>
           </div>
           <div className="w-[900px] mx-4 flex-auto bg-white shadow-2xl shadow-gray-900/10 sm:rounded-5xl ">
@@ -44,7 +47,7 @@ export default function Widget() {
             <h3 className="text-lg font-medium mb-2">Usage</h3>
             <ol className="list-decimal list-inside mb-4">
               <li className="mb-2">Import the <code className="bg-gray-200 px-1 rounded">PaydeceWidget</code> component into your application.
-                <pre className="bg-gray-200 p-4 rounded"><code>import &#123; PaydeceWidget &#125; from 'paydece-widget';</code></pre>
+                <pre className="bg-gray-200 p-4 rounded"><code>import &#123; PaydeceWidget &#125; from &#39;paydece-widget&#39;;</code></pre>
               </li>
               <li className="mb-2">Initialize the widget with the necessary parameters:
                 <pre className="bg-gray-200 p-4 rounded"><code>{`useEffect(() => {
@@ -69,6 +72,9 @@ export default function Widget() {
     </>
   )
 }
+
+
+
 
 
 
